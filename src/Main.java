@@ -1,6 +1,35 @@
 public class Main {
     public static void main(String[] args) {
 
+        Dom house = new Dom();
+        house.setBudynek("testowy");
+        house.powierzchnia(120.0);
+        house.adresBudynku("Ceynowy 5");
+        house.liczbaOkien(15);
+        house.liczbaMieszkancow(4);
+        house.poleBudynku(3.1, 4.5);
+        house.kolorDomu(KolorEnum.gray);
+
+        System.out.println(house.toString());
+
+        System.out.println();
+
+        Budynek house2 = new Dom();
+        house2.setBudynek("house_two");
+        house2.powierzchnia(40);
+        house.adresBudynku("Ceynowy 12");
+        house.liczbaOkien(36);
+        house.liczbaMieszkancow(3);
+        house.poleBudynku(2.2, 3);
+        house.kolorDomu(KolorEnum.blue);
+
+        System.out.println(house2.toString());
+    }
+}
+
+
+
+
         /* zad.1
         a) Stwożyć interfejs Budynek,
         b) interfejs powinien mieć metody:
@@ -27,5 +56,5 @@ public class Main {
         b) wykorzystać wszystkie metody do implementacji pól
         c) wyświetlić w konsoli metodę toString (na obu objektach) opisującą zachowanie klasy Dom
         */
-    }
-}
+
+
